@@ -57,6 +57,54 @@ transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432
 [node name="Marker3D4" type="Marker3D" parent="RobotSpawnpoints"]
 transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432, -9.15526, -11.6923, -16.9238)
 
+[node name="Marker3D5" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432, -14.6157, -11.6923, -14.6661)
+
+[node name="Marker3D6" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432, -18.0537, -11.6923, -10.111)
+
+[node name="Marker3D7" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432, -20.8551, -11.6923, -0.667226)
+
+[node name="Marker3D8" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432, -20.5669, -11.6923, 4.51041)
+
+[node name="Marker3D9" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.164432, 0, 0.986389, 0, 1, 0, -0.986389, 0, -0.164432, -17.0836, -11.6923, 9.60081)
+
+[node name="Marker3D10" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 43.9291, -5.33612, 71.6781)
+
+[node name="Marker3D11" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 40.0108, -5.33612, 73.7998)
+
+[node name="Marker3D12" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 33.7611, -5.33612, 77.1177)
+
+[node name="Marker3D13" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 26.8718, -5.33612, 79.6806)
+
+[node name="Marker3D14" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 22.9183, -5.33612, 81.9059)
+
+[node name="Marker3D15" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 17.7189, -5.33612, 83.8002)
+
+[node name="Marker3D16" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 7.93518, -5.33612, 84.9349)
+
+[node name="Marker3D17" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 21.3658, -5.33612, 86.3105)
+
+[node name="Marker3D18" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 27.6901, -5.33612, 84.0827)
+
+[node name="Marker3D19" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 32.2349, -5.33612, 81.222)
+
+[node name="Marker3D20" type="Marker3D" parent="RobotSpawnpoints"]
+transform = Transform3D(-0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 35.9203, -5.33612, 82.9395)
+
 [node name="PlayerSpawnpoints" type="Node3D" parent="."]
 
 [node name="Marker3D1" type="Marker3D" parent="PlayerSpawnpoints"]

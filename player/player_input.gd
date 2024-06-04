@@ -34,6 +34,13 @@ var aiming_timer := 0.0
 @export var color_rect : ColorRect
 
 
+@onready var bone_attachments: Array[BoneAttachment3D] = [
+	%ba1, %ba2, %ba3, %ba4, %ba5, %ba6, %ba7, %ba8, %ba9, %ba10,
+	%ba11, %ba12, %ba13, %ba14, %ba15, %ba16, %ba17, %ba18, %ba19, %ba20,
+	%ba21, %ba22, %ba23, %ba24, %ba25, %ba26
+]
+
+
 func _ready():
 	if get_multiplayer_authority() == multiplayer.get_unique_id():
 		camera_camera.make_current()
@@ -116,6 +123,13 @@ func _input(event):
 		if aiming:
 			camera_speed_this_frame *= 0.75
 		rotate_camera(event.relative * camera_speed_this_frame * scale_factor)
+
+	if event is InputEventKey:
+		if event.is_action_pressed("ui_accept"):
+			for ba in bone_attachments.duplicate():
+				prints("erasing", ba)
+				ba.queue_free()
+				bone_attachments.erase(ba)
 
 
 func rotate_camera(move):

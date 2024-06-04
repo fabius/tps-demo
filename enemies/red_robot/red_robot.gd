@@ -53,6 +53,11 @@ var blast_scene = preload("res://enemies/red_robot/laser/impact_effect/impact_ef
 
 @onready var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * ProjectSettings.get_setting("physics/3d/default_gravity_vector")
 
+
+@onready var bone_attachments := [
+	%BoneAttachment3D, %BoneAttachment3D2, %BoneAttachment3D3, %BoneAttachment3D4, %BoneAttachment3D5, %BoneAttachment3D6, %BoneAttachment3D7, %BoneAttachment3D8, %BoneAttachment3D9, %BoneAttachment3D10, %BoneAttachment3D11, %BoneAttachment3D12, %BoneAttachment3D13, %BoneAttachment3D14, %BoneAttachment3D15, %BoneAttachment3D16, %BoneAttachment3D17, %BoneAttachment3D18, %BoneAttachment3D19, %BoneAttachment3D20, %BoneAttachment3D21, %BoneAttachment3D22, %BoneAttachment3D23, %BoneAttachment3D24, %BoneAttachment3D25, %BoneAttachment3D26, %BoneAttachment3D27, %BoneAttachment3D28, %BoneAttachment3D29, %BoneAttachment3D30, %BoneAttachment3D31, %BoneAttachment3D32, %BoneAttachment3D33, %BoneAttachment3D34, %BoneAttachment3D35, %BoneAttachment3D36, %BoneAttachment3D37, %BoneAttachment3D38, %BoneAttachment3D39, %BoneAttachment3D40, %BoneAttachment3D41, %BoneAttachment3D42, %BoneAttachment3D43, %BoneAttachment3D44, %BoneAttachment3D45, %BoneAttachment3D46, %BoneAttachment3D47, %BoneAttachment3D48, %BoneAttachment3D49, %BoneAttachment3D50, %BoneAttachment3D51, %BoneAttachment3D52, %BoneAttachment3D53, %BoneAttachment3D54, %BoneAttachment3D55, %BoneAttachment3D56, %BoneAttachment3D57, %BoneAttachment3D58, %BoneAttachment3D59, %BoneAttachment3D60, %BoneAttachment3D61, %BoneAttachment3D62, %BoneAttachment3D63, %BoneAttachment3D64
+]
+
 func _ready():
 	orientation = global_transform
 	orientation.origin = Vector3()
@@ -66,6 +71,14 @@ func _ready():
 		animation_tree.active = false
 
 	animate()
+
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		for ba in bone_attachments.duplicate():
+			prints("erasing", ba)
+			ba.queue_free()
+			bone_attachments.erase(ba)
 
 func resume_approach():
 	state = State.APPROACH
